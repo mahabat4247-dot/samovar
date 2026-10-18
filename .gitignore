@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# SonarScanner output
+.scannerwork/
+
+# Environment and secrets
+.env
+*.env
+*.pem
+*.key
+*.pfx
+secrets/
+.idea/
+.vscode/
+*.log

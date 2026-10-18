@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samovar - Modern and Elegant Russian Restaurant offering authentic culinary traditions including Borscht, Pelmeni, Vareniki, Blini, Pirozhki, and Syrniki.">
+  <title>Samovar | Modern &amp; Elegant Russian Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo" aria-label="Samovar Home">
+        <span class="logo-icon">&#127861;</span>
+        <span class="logo-text">SAMOVAR</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#contact" class="nav-link">Contact &amp; Hours</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="cart-toggle-btn" id="cart-toggle-btn" aria-label="View Shopping Cart">
+          <span class="cart-icon">&#128722;</span>
+          <span class="cart-text">Cart</span>
+          <span class="cart-badge" id="cart-badge" aria-label="0 items in cart">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="hero-subtitle">Authentic Culinary Heritage</span>
+        <h1 class="hero-title">Experience the Timeless Elegance of Russian Gastronomy</h1>
+        <p class="hero-description">
+          Welcome to Samovar, where century-old recipes meet modern refinement. Indulge in warm hospitality, handcrafted delicacies, and rich culinary traditions.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+          <a href="#contact" class="btn btn-secondary">Reserve a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-tag">Our Story</span>
+            <h2 class="section-title">A Heritage of Warmth &amp; Flavor</h2>
+            <p>
+              At Samovar, we celebrate the rich culture of Russian feasts. Named after the traditional brass vessel that gathers families and friends around warm tea and rich conversations, our restaurant brings the finest authentic flavors to your table with contemporary elegance.
+            </p>
+            <p>
+              From hand-rolled pelmeni to velvety borscht infused with aromatic herbs, every dish is prepared with passion, premium ingredients, and respect for tradition.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <span class="highlight-icon">&#127858;</span>
+              <h3>Authentic Recipes</h3>
+              <p>Handcrafted by master chefs using time-honored traditional techniques.</p>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-icon">&#10024;</span>
+              <h3>Refined Ambience</h3>
+              <p>An atmosphere inspired by regal hospitality and golden elegance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Culinary Delights</span>
+          <h2 class="section-title">Our Signature Menu</h2>
+          <p class="section-subtitle">Savor classical favorites created with artisanal craftsmanship.</p>
+        </div>
+
+        <div class="menu-grid" id="menu-grid">
+          <!-- Dish 1: Borscht -->
+          <article class="menu-card" data-dish-id="borscht">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Authentic Royal Borscht with Sour Cream and Fresh Dill" loading="lazy">
+              <span class="dish-badge">Classic</span>
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="dish-title">Royal Borscht</h3>
+                <span class="dish-price">$16.00</span>
+              </div>
+              <p class="dish-description">Rich slow-simmered beetroot soup cooked with tender beef chuck, root vegetables, fresh herbs, served with sourdough rye and cold smetana.</p>
+              <button type="button" class="btn btn-add-cart" data-id="borscht" data-name="Royal Borscht" data-price="16.00">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <!-- Dish 2: Pelmeni -->
+          <article class="menu-card" data-dish-id="pelmeni">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Handcrafted Siberian Pelmeni dumplings" loading="lazy">
+              <span class="dish-badge">Chef's Special</span>
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="dish-title">Siberian Pelmeni</h3>
+                <span class="dish-price">$18.50</span>
+              </div>
+              <p class="dish-description">Hand-folded delicate pasta dumplings stuffed with seasoned beef and pork mix, tossed in melted herb butter, served with sour cream and cracked pepper.</p>
+              <button type="button" class="btn btn-add-cart" data-id="pelmeni" data-name="Siberian Pelmeni" data-price="18.50">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <!-- Dish 3: Vareniki -->
+          <article class="menu-card" data-dish-id="vareniki">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Golden Potato and Wild Mushroom Vareniki" loading="lazy">
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="dish-title">Potato &amp; Mushroom Vareniki</h3>
+                <span class="dish-price">$17.00</span>
+              </div>
+              <p class="dish-description">Traditional dumplings stuffed with whipped Yukon Gold potatoes, wild mushrooms, and caramelized onions, topped with crispy shallots and dill.</p>
+              <button type="button" class="btn btn-add-cart" data-id="vareniki" data-name="Potato &amp; Mushroom Vareniki" data-price="17.00">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <!-- Dish 4: Blini -->
+          <article class="menu-card" data-dish-id="blini">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Golden Russian Blini with Salmon Caviar" loading="lazy">
+              <span class="dish-badge">Signature</span>
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="dish-title">Imperial Caviar Blini</h3>
+                <span class="dish-price">$22.00</span>
+              </div>
+              <p class="dish-description">Delicate thin golden crepes served with house-cured wild red salmon caviar, crème fraîche, chives, and melted churned butter.</p>
+              <button type="button" class="btn btn-add-cart" data-id="blini" data-name="Imperial Caviar Blini" data-price="22.00">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <!-- Dish 5: Pirozhki -->
+          <article class="menu-card" data-dish-id="pirozhki">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Freshly baked golden Pirozhki" loading="lazy">
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="dish-title">Artisanal Pirozhki Trio</h3>
+                <span class="dish-price">$14.00</span>
+              </div>
+              <p class="dish-description">Three golden, freshly baked yeast pastries filled with braised cabbage with egg, savory minced beef, and spiced potato filling.</p>
+              <button type="button" class="btn btn-add-cart" data-id="pirozhki" data-name="Artisanal Pirozhki Trio" data-price="14.00">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <!-- Dish 6: Syrniki -->
+          <article class="menu-card" data-dish-id="syrniki">
+            <div class="menu-card-image">
+              <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Syrniki cottage cheese pancakes served with berries and honey" loading="lazy">
+            </div>
+            <div class="menu-card-content">
+              <div class="menu-card-header">
+                <h3 class="dish-title">Golden Syrniki</h3>
+                <span class="dish-price">$15.00</span>
+              </div>
+              <p class="dish-description">Pan-sear pan-fried sweet farmer cheese pancakes, vanilla-infused, served warm with forest berry compote, wild blossom honey, and sour cream.</p>
+              <button type="button" class="btn btn-add-cart" data-id="syrniki" data-name="Golden Syrniki" data-price="15.00">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Opening Hours Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-tag">Visit Us</span>
+            <h2 class="section-title">Contact &amp; Location</h2>
+            <p class="contact-intro">Join us for an unforgettable dining experience. Reservations and inquiries are welcomed.</p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <span class="info-icon">&#128205;</span>
+                <div>
+                  <strong>Address</strong>
+                  <p>742 Nevsky Prospect, Suite 100, New York, NY 10001</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">&#128222;</span>
+                <div>
+                  <strong>Phone</strong>
+                  <p><a href="tel:+12125550199">+1 (212) 555-0199</a></p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">&#128231;</span>
+                <div>
+                  <strong>Email</strong>
+                  <p><a href="mailto:reservations@samovar-restaurant.com">reservations@samovar-restaurant.com</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hours-card">
+            <h3 class="hours-title">Opening Hours</h3>
+            <ul class="hours-list">
+              <li>
+                <span>Monday &ndash; Thursday</span>
+                <span>12:00 PM &ndash; 10:00 PM</span>
+              </li>
+              <li>
+                <span>Friday &ndash; Saturday</span>
+                <span>12:00 PM &ndash; 11:00 PM</span>
+              </li>
+              <li>
+                <span>Sunday</span>
+                <span>11:00 AM &ndash; 9:30 PM</span>
+              </li>
+            </ul>
+            <div class="reservation-note">
+              <p><strong>Note:</strong> Table reservations are highly recommended for weekend evenings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shopping Cart Drawer / Modal -->
+  <div class="cart-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <h2 id="cart-drawer-title" class="cart-drawer-title">Your Order</h2>
+      <button type="button" class="cart-close-btn" id="cart-close-btn" aria-label="Close Shopping Cart">&times;</button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-items-container">
+      <!-- Dynamic cart items rendered by script.js -->
+      <div class="cart-empty-message">
+        <span class="empty-icon">&#128722;</span>
+        <p>Your shopping cart is currently empty.</p>
+        <a href="#menu" class="btn btn-secondary btn-sm" id="btn-browse-menu">Browse Menu</a>
+      </div>
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">$0.00</span>
+      </div>
+      <div class="cart-summary-line">
+        <span>Estimated Tax (8.875%)</span>
+        <span id="cart-tax">$0.00</span>
+      </div>
+      <div class="cart-summary-line cart-total-line">
+        <span>Total</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <button type="button" class="btn btn-primary btn-block" id="checkout-btn" disabled>Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Samovar Russian Restaurant. All rights reserved.</p>
+      <p class="footer-tagline">Warmth, Elegance &amp; Authentic Tradition.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

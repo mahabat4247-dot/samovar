@@ -1,0 +1,23 @@
+{
+  "name": "samovar",
+  "version": "1.0.0",
+  "description": "Samovar - A modern and elegant Russian restaurant website",
+  "main": "index.html",
+  "scripts": {
+    "lint:html": "htmlhint index.html",
+    "lint:js": "eslint script.js",
+    "lint": "htmlhint index.html && eslint script.js",
+    "build": "node build.js"
+  },
+  "keywords": [
+    "restaurant",
+    "russian-cuisine",
+    "samovar"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "htmlhint": "^1.1.4"
+  }
+}
